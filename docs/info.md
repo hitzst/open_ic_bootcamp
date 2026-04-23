@@ -9,12 +9,9 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+To start counting, the EN (enable) pin must be set HIGH and the R (reset) pin LOW. Then, each pulse on the IN (input) pin will increase the binary representation of the outputs by 1. Four output bits are available (B0-B3). Setting the EN pin LOW will disable counting. Setting the R pin HIGH will reset all output pins to LOW (0).
 
 ## How to test
 
-Explain how to use your project
-
-## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Set the EN pin to HIGH and attach a pulse generator to the IN pin. The output bits should now count up.
+Set the EN pin to LOW and the R pin to HIGH. The output bits should now all show LOW.
